@@ -2,3 +2,54 @@ body{
     color: #413227;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
+a{
+    color: #413227;
+}
+.parallax-wrapper {
+  position: relative;
+  height: 680px;
+  background-image: url("Content/imgBackground.jpg");
+  background-size: 120% auto;
+  background-position: center top;
+}
+
+#bgPicContainer {
+  height: 680px;
+}
+
+
+@media (max-width: 992px) {
+  #bgPicContainer,
+  .parallax-wrapper{
+    height: 600px;
+    }
+}
+
+@media (max-width: 840px) {
+  #bgPicContainer,
+  .parallax-wrapper{
+    height: 500px;
+    }
+}
+
+
+@media (max-width: 768px) {
+  #bgPicContainer,
+  .parallax-wrapper{
+    height: 400px;
+    }
+}
+
+@media (max-width: 640px) {
+  #bgPicContainer,
+  .parallax-wrapper{
+    height: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+  #bgPicContainer,
+  .parallax-wrapper{
+    height: 300px;
+    }
+}
