@@ -5,6 +5,14 @@ body{
 a{
     color: #413227;
 }
+
+.navbar-collapse {
+    z-index: 1070;
+}
+#navbarNav{
+  top:0;
+}
+
 .parallax-wrapper {
   position: relative;
   height: 680px;
@@ -22,6 +30,15 @@ a{
   #bgPicContainer,
   .parallax-wrapper{
     height: 600px;
+    }
+    #navbarNav{
+      top:60px;
+    }
+    a.nav-link{
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-right: 16px;
+      font-size: 18px;
     }
 }
 
@@ -53,3 +70,4 @@ a{
     height: 300px;
     }
 }
+
