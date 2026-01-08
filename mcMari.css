@@ -39,7 +39,7 @@ body,a{
 
 #bgPicContainer,
 .parallax-wrapper {
-  height: clamp(100px, 50vw, 800px);
+  height: clamp(100px, 60vw, 800px);
 }
 
 #bgsvg1{
@@ -50,5 +50,11 @@ body,a{
 }
 
 #textContainer, #picContainer {
-  background-color: #e4e0df;
+  background-color: #e3dedd;
+}
+
+@media (max-width: 576px) {
+  #textContainer, #picContainer {
+    background-color: #cbb8af; /* visible on phones */
+  }
 }
