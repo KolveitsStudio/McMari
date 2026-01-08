@@ -55,6 +55,6 @@ body,a{
 
 @media (max-width: 576px) {
   #textContainer, #picContainer {
-    background-color: #e3dedd; /* visible on phones */
+    background-color: #F0D3CE;
   }
 }
