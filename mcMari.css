@@ -1,41 +1,12 @@
-body{
+/*base change*/
+body,a{
     color: #413227;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
-a{
-    color: #413227;
-}
 
+/*NavBar*/
 .navbar-collapse {
     z-index: 1070;
-}
-#navbarNav{
-  top:0;
-}
-
-.parallax-wrapper {
-  position: relative;
-  height: 680px;
-  background-image: url("Content/imgBackground.jpg");
-  background-size: 120% auto;
-  background-position: center top;
-}
-
-#bgPicContainer {
-  height: 680px;
-}
-
-#bgsvg1{
-  top:0;
-  left:0;
-  width:100vw;
-  pointer-events: none;
-  background-size: cover; /* or contain */
-  fill:aqua;
-}
-
-#bgFscrImg{
-
 }
 
 @media (max-width: 992px) {
@@ -58,32 +29,29 @@ a{
     }
 }
 
-@media (max-width: 840px) {
-  #bgPicContainer,
-  .parallax-wrapper{
-    height: 500px;
-    }
+/*Main Wrapper*/
+.parallax-wrapper, #bgPicContainer{
+  height: 680px;
+}
+
+.parallax-wrapper {
+  position: relative;
+  background-image: url("Content/imgBackground.jpg");
+  background-size: 120% auto;
+  background-position: center top;
 }
 
 
-@media (max-width: 768px) {
-  #bgPicContainer,
-  .parallax-wrapper{
-    height: 400px;
-    }
+/*Background Image*/
+
+#bgPicContainer,
+.parallax-wrapper {
+  height: clamp(100px, 60vw, 800px);
 }
 
-@media (max-width: 640px) {
-  #bgPicContainer,
-  .parallax-wrapper{
-    height: 350px;
-    }
+#bgsvg1{
+  top:0;
+  left:0;
+  width:100vw;
+  pointer-events: none;
 }
-
-@media (max-width: 576px) {
-  #bgPicContainer,
-  .parallax-wrapper{
-    height: 300px;
-    }
-}
-
