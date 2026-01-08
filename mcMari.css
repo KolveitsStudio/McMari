@@ -10,10 +10,6 @@ body,a{
 }
 
 @media (max-width: 992px) {
-  #bgPicContainer,
-  .parallax-wrapper{
-    height: 600px;
-    }
     #navbarNav{
       top:60px;
       border-top: 1px solid rgb(222, 226, 230);
@@ -29,20 +25,17 @@ body,a{
     }
 }
 
-/*Main Wrapper*/
-.parallax-wrapper, #bgPicContainer{
-  height: 680px;
-}
+/*Background Image*/
+
+
 
 .parallax-wrapper {
   position: relative;
   background-image: url("Content/imgBackground.jpg");
   background-size: 120% auto;
   background-position: center top;
+  background-repeat: no-repeat;
 }
-
-
-/*Background Image*/
 
 #bgPicContainer,
 .parallax-wrapper {
@@ -54,4 +47,8 @@ body,a{
   left:0;
   width:100vw;
   pointer-events: none;
+}
+
+#textContainer,#picContainer{
+  background-color: #e3dedd;
 }
