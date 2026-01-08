@@ -46,7 +46,7 @@ body,a{
 
 #bgPicContainer,
 .parallax-wrapper {
-  height: clamp(100px, 60vw, 800px);
+  height: clamp(100px, 50vw, 800px);
 }
 
 #bgsvg1{
