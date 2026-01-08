@@ -1,5 +1,5 @@
 /*base change*/
-body,a{
+body,.navbar a.nav-link{
     color: #413227;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
