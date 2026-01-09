@@ -10,7 +10,7 @@
     <!--JS-->
     <script src="jquery-3.6.0.js"></script>
     <script src="mcMari.js"></script>
-    <title>McMari Website</title>
+    <title>McMari Produkti</title>
 </head>
 <body class="bg-white">
     <div class="container-fluid position-fixed p-0" style="z-index: -1; height: 1920px;">
@@ -44,26 +44,58 @@
         </nav>
     </header>
 
-    <div id="mainWrapper" class="container-fluid bg-white p-0 mx-auto" style="max-width: 1440px; position: relative; top: 60px;">
-        <div id="bgPicContainer" class="container-fluid p-0 parallax-wrapper">
-        </div>
+    <div id="mainWrapper" class="container-fluid bg-white p-0" style="max-width: 1440px; position: relative; top: 60px;">
         <div id="textContainer" class="container-fluid p-5 text-center">
-            <h1 class="fw-bold">Par McMari</h1>
-            <p class="fw-semibold mt-4 mx-auto" style="max-width: 720px;">
-                    Madonas roku ražotās sveces ir mazs ģimenes uzņēmums Madonā,
-                    kur katra svece tiek darināta ar rokām un mīlestību.
-                    Mēs izmantojam tikai dabiskus materiālus,
-                    lai radītu siltu gaismu un mājīgu noskaņu jūsu mājās.
-                    Ar katru liesmu nesam gabaliņu Latvijas dabas burvības!
-            </p>
+            <h1 class="fw-bold">Kontakti</h1>
         </div>
-        <div id="picContainer" class="container-fluid p-0">
-            <div class="container-fluid">
-                <div class="row row-cols-xl-4 row-cols-lg-1 justify-content-center pb-5">
-                    <div class="bg-white mx-4 my-4 rounded-4" style="height:534px; width:300px"></div>
-                    <div class="bg-white mx-4 my-4 rounded-4" style="height:534px; width:300px"></div>
-                    <div class="bg-white mx-4 my-4 rounded-4 d-none d-xl-block" style="height:534px; width:300px"></div>
-                    <div class="bg-white mx-4 my-4 rounded-4 d-none d-xxl-block" style="height:534px; width:300px"></div>
+        <div id="spacer-lg"></div>
+        <div id="contactContainer" class="container-fluid p-0 m-0 d-flex flex-grow-1" style="height: 100%;">
+            <div class="container-fluid d-flex">
+                <div class="row row-cols-2 my-5 flex-grow-1 flex-grow-1">
+                    <div class="col-6 px-5" style="height: 100%;">
+                        <!-- Top container -->
+                        <div class="container-fluid text-center d-flex flex-column justify-content-end pb-5" style="height: 50%;">
+                            <h1 class="fw-bold fs-4">Sazinies ar mums</h1>
+                            <p class="fw-semibold mt-4 mb-0 mx-auto text-start fs-6" style="max-width: 720px;">
+                                Mums ir svarīgi dzirdēt no jums! Vai jums ir jautājumi par mūsu produktiem,
+                                vai vēlaties pasūtīt personalizētus izstrādājumus? Lūdzu, sazinieties ar mums,
+                                aizpildot kontaktformu vai izmantojot zemāk norādītos kontaktus.
+                            </p>
+                        </div>
+
+                        <!-- Bottom container -->
+                        <div class="container-fluid pt-5" style="height: 50%;">
+                            <p class="d-block fs-6 fw-semibold"><i class="bi bi-envelope fs-4 pe-4"></i>info@mcmari.lv</p>
+                            <p class="d-block fs-6 fw-semibold"><i class="bi bi-telephone fs-4 pe-4"></i>+371 26 470 920</p>
+                            <p class="d-block fs-6 fw-semibold"><i class="bi bi-geo-alt fs-4 pe-4"></i>Madona, Latvia</p>
+                        </div>
+                    </div>
+                    <div class="col-1 m-0 p-0"></div>
+                    <div class="col-5 px-5 my-auto flex-grow-1">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label fs-6 fw-semibold">Vards</label>
+                                <input type="text" class="form-control" id="name" placeholder="" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label fs-6 fw-semibold">E-pasts</label>
+                                <input type="email" class="form-control" id="email" placeholder="" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="number" class="form-label fs-6 fw-semibold">Telefona numurs</label>
+                                <input type="tel" class="form-control" id="number" placeholder="">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label fs-6 fw-semibold">Apraksts</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="" required></textarea>
+                            </div>
+
+                            <button id="btnSubmit" type="submit" class="btn btn-primary">Nosutit!</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

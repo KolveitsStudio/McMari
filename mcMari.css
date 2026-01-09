@@ -25,9 +25,13 @@ body,.navbar a.nav-link, footer a, a{
     }
 }
 
+/*Main wrapper*/
+#mainWrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 140px);
+}
 /*Background Image*/
-
-
 
 .parallax-wrapper {
   position: relative;
@@ -49,7 +53,7 @@ body,.navbar a.nav-link, footer a, a{
   pointer-events: none;
 }
 
-#textContainer, #picContainer, #productWrapper{
+#textContainer, #picContainer, #productWrapper, #contactContainer{
   background-color: #e3dedd;
 }
 
@@ -81,4 +85,10 @@ body,.navbar a.nav-link, footer a, a{
   padding: 0;
   background-color: white;
   height:40px;
+}
+
+/*colors*/
+#btnSubmit{
+  background-color: #413227;
+  border: none;
 }
