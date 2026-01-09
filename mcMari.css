@@ -53,10 +53,6 @@ body,.navbar a.nav-link, footer a, a{
   pointer-events: none;
 }
 
-#textContainer, #picContainer, #productWrapper, #contactContainer{
-  background-color: #e3dedd;
-}
-
 @media (max-width: 576px) {
   #textContainer, #picContainer {
     background-color: #F0D3CE;
@@ -78,6 +74,37 @@ body,.navbar a.nav-link, footer a, a{
     object-fit: cover;
     border-radius: 16px;
 }
+/*gallery page*/
+#galerijaContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: min-content;
+    gap: 8px;
+}
+
+/* Each item */
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Image keeps native width/height */
+.gallery-item img {
+    width: auto; /* keep native size */
+    max-width: 100%; /* scale down if too big for column */
+    height: auto;
+    display: block;
+}
+
+/* Caption box below image */
+.gallery-item .caption {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.05); /* light background */
+    text-align: center;
+}
 
 /*spacers*/
 #spacer-lg{
@@ -88,6 +115,9 @@ body,.navbar a.nav-link, footer a, a{
 }
 
 /*colors*/
+#textContainer, #picContainer, #productWrapper, #contactContainer, #galerijaContainer{
+  background-color: #e3dedd;
+}
 #btnSubmit{
   background-color: #413227;
   border: none;
