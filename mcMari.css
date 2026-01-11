@@ -72,38 +72,34 @@ body,.navbar a.nav-link, footer a, a{
     width: 100%;
     height: 540px;
     object-fit: cover;
-    border-radius: 16px;
+    border-radius: 16px; 
 }
 /*gallery page*/
-#galerijaContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-auto-rows: min-content;
-    gap: 8px;
-}
-
-/* Each item */
 .gallery-item {
-    display: flex;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1.2s ease forwards;
+    overflow: hidden;
     flex-direction: column;
+    width: 340px;
 }
-
-/* Image keeps native width/height */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .gallery-item img {
-    width: auto; /* keep native size */
-    max-width: 100%; /* scale down if too big for column */
-    height: auto;
-    display: block;
+    height: 340px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
 }
-
-/* Caption box below image */
-.gallery-item .caption {
+.caption {
     height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0,0,0,0.05); /* light background */
-    text-align: center;
+}
+.gallery-item:hover img {
+    transform: scale(1.05);
 }
 
 /*spacers*/
@@ -115,7 +111,7 @@ body,.navbar a.nav-link, footer a, a{
 }
 
 /*colors*/
-#textContainer, #picContainer, #productWrapper, #contactContainer, #galerijaContainer{
+#textContainer, #picContainer, #productWrapper, #contactContainer, #galerijaContainer, #galleryContainer{
   background-color: #e3dedd;
 }
 #btnSubmit{
