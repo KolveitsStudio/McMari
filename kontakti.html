@@ -13,7 +13,7 @@
     </script>
     <title>McMari Kontakti</title>
 </head>
-<body class="bg-white">
+<body class="bg-white ">
     <div class="container-fluid position-fixed p-0" style="z-index: -1; height: 1920px;">
         <img class="" id="bgsvg1" src="Images\treeSvg.svg"></img>
     </div>
@@ -51,27 +51,31 @@
         </div>
         <div id="contactContainer" class="container-fluid p-0 m-0 d-flex flex-grow-1" style="height: 100%;">
             <div class="container-fluid d-flex">
-                <div class="row row-cols-2 my-5 flex-grow-1 flex-grow-1">
-                    <div class="col-6 px-5" style="height: 100%;">
+                <div class="container-fluid my-auto">
+                    <div class="row my-5">
+
+                        <!-- LEFT COLUMN -->
+                        <div class="col-12 col-lg-6 px-3 px-lg-5 mb-5 mb-lg-0">
+
                         <!-- Top container -->
-                        <div class="container-fluid text-center d-flex flex-column justify-content-end pb-5" style="height: 50%;">
+                        <div class="text-center d-flex flex-column justify-content-end pb-5">
                             <h1 class="fw-bold fs-4">Sazinies ar mums</h1>
                             <p class="fw-semibold mt-4 mb-0 mx-auto text-start fs-6" style="max-width: 720px;">
-                                Mums ir svarīgi dzirdēt no jums! Vai jums ir jautājumi par mūsu produktiem,
-                                vai vēlaties pasūtīt personalizētus izstrādājumus? Lūdzu, sazinieties ar mums,
-                                aizpildot kontaktformu vai izmantojot zemāk norādītos kontaktus.
+                            Mums ir svarīgi dzirdēt no jums! Vai jums ir jautājumi par mūsu produktiem,<br>
+                            vai vēlaties pasūtīt personalizētus izstrādājumus?
                             </p>
                         </div>
 
                         <!-- Bottom container -->
-                        <div class="container-fluid pt-5" style="height: 50%;">
-                            <p class="d-block fs-6 fw-semibold"><i class="bi bi-envelope fs-4 pe-4"></i>mcmari.info@gmail.com</p>
-                            <p class="d-block fs-6 fw-semibold"><i class="bi bi-telephone fs-4 pe-4"></i>+371 26 470 920</p>
-                            <p class="d-block fs-6 fw-semibold"><i class="bi bi-geo-alt fs-4 pe-4"></i>Madona, Latvia</p>
+                        <div class="pt-4">
+                            <p class="fs-6 fw-semibold"><i class="bi bi-envelope fs-4 pe-4"></i>mcmari.info@gmail.com</p>
+                            <p class="fs-6 fw-semibold"><i class="bi bi-telephone fs-4 pe-4"></i>+371 26 470 920</p>
+                            <p class="fs-6 fw-semibold"><i class="bi bi-geo-alt fs-4 pe-4"></i>Madona, Latvia</p>
                         </div>
-                    </div>
-                    <div class="col-1 m-0 p-0"></div>
-                    <div class="col-5 px-5 my-auto flex-grow-1">
+
+                        </div>
+                        <!-- RIGHT COLUMN-->
+                    <div class="col-12 col-lg-6 px-3 px-lg-5">
                         <form id="contactForm">
                             <div class="mb-3">
                                 <label for="name" class="form-label fs-6 fw-semibold">Vārds</label>
@@ -102,8 +106,10 @@
                 </div>
             </div>
         </div>
-        <div id="spacer-lg" class="d-none d-lg-block"></div>
     </div>
+    <div id="spacer-lg" class="d-none d-lg-block"></div>
+    </div>
+    
     <footer id="footer" class="container-fluid position-relative d-flex justify-content-center align-items-center p-0 border-top" style="height: 80px; top: 60px;max-width: 1440px;  border-color: #413227" >
         <div class="container-fluid" style="width: 460px;">
             <div class="row px-4">
@@ -112,8 +118,6 @@
             </div>
         </div>
     </footer>
-    
-</div>
 <script src="Js/kontakti.js"></script>
 
 <script src="Js/bootstrap.bundle.min.js"></script>
