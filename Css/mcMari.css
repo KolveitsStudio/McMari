@@ -35,7 +35,7 @@ body,.navbar a.nav-link, footer a, a{
 
 .parallax-wrapper {
   position: relative;
-  background-image: url("Content/imgBackground.jpg");
+  background-image: url("../Images/imgBackground.jpg");
   background-size: 120% auto;
   background-position: center top;
   background-repeat: no-repeat;
