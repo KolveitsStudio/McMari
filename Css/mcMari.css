@@ -171,7 +171,10 @@ body,.navbar a.nav-link, footer a, a{
 }
 
 /*colors*/
-
+.navbar-collapse.collapsing,
+.navbar-collapse.show {
+  background-color: white !important;
+}
 .navbar, .picContainer-item, #footer, #galleryContainer, #contactContainer, #productWrapper{
   background-color: #e3dedd;
 }
@@ -187,7 +190,7 @@ a,h1,h2,p, a.nav-link, label{
 
 @media (max-width: 992px) {
   #picContainer, #productWrapper, #contactContainer, .gallery-item, #textContainer,  #galleryContainer, #productWrapper{
-  background-color: #E8B9AB;
+  background-color: #E9C6BB;
 }
 .navbar, .collapse, .gallery-item, #footer, .picContainer-item{
   background-color: white;
