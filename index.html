@@ -17,13 +17,13 @@
     </div>
     
     <header class="position-absolute top-0 start-50 translate-middle-x w-100" style="z-index:1700;">
-        <nav class="navbar navbar-expand-lg mx-auto position-relative bg-white"style="max-width:1440px; height:60px;">
+        <nav class="navbar navbar-expand-lg mx-auto position-relative"style="max-width:1440px; height:60px;">
             <a class="navbar-brand position-absolute top-50 start-50 translate-middle p-0 m-0"href="index.html" style="z-index: 1800;">McMari</a>
             <div class="ms-auto d-flex align-items-center h-100">
                 <button class="navbar-toggler me-2" type="button"data-bs-toggle="collapse"data-bs-target="#navbarNav"aria-controls="navbarNav"aria-expanded="false"aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="container-fluid collapse navbar-collapse position-absolute bg-white end-0 justify-content-end "id="navbarNav" style="height: 60px;">
+                <div class="container-fluid collapse navbar-collapse position-absolute  end-0 justify-content-end "id="navbarNav" style="height: 60px;">
                     <ul class="navbar-nav text-end">
                         <li class="nav-item fs-6 fw-semibold"><a class="nav-link" href="produkti.html">Produkti</a></li>
                         <li class="nav-item fs-6 fw-semibold"><a class="nav-link" href="galerija.html">Galerija</a></li>
@@ -44,6 +44,7 @@
     </header>
 
     <div id="mainWrapper" class="container-fluid bg-white p-0 mx-auto" style="max-width: 1440px; position: relative; top: 60px;">
+        <div id="spacer-lg" class="d-none d-lg-block"></div>
         <div id="bgPicContainer" class="container-fluid p-0 parallax-wrapper">
         </div>
         <div id="textContainer" class="container-fluid p-5 text-center">
@@ -58,16 +59,17 @@
         </div>
         <div id="picContainer" class="container-fluid p-0">
             <div class="container-fluid">
-                <div class="row row-cols-xl-4 row-cols-lg-1 justify-content-center pb-5">
-                    <div class="bg-white mx-4 my-4 rounded-4" style="height:534px; width:300px"></div>
-                    <div class="bg-white mx-4 my-4 rounded-4" style="height:534px; width:300px"></div>
-                    <div class="bg-white mx-4 my-4 rounded-4 d-none d-xl-block" style="height:534px; width:300px"></div>
-                    <div class="bg-white mx-4 my-4 rounded-4 d-none d-xxl-block" style="height:534px; width:300px"></div>
+                <div class="row row-cols-xl-4 row-cols-lg-1 justify-content-center">
+                    <div class="picContainer-item mx-4 my-4 rounded-4" style="height:534px; width:300px"></div>
+                    <div class="picContainer-item mx-4 my-4 rounded-4" style="height:534px; width:300px"></div>
+                    <div class="picContainer-item mx-4 my-4 rounded-4 d-none d-xl-block" style="height:534px; width:300px"></div>
+                    <div class="picContainer-item mx-4 my-4 rounded-4 d-none d-xxl-block" style="height:534px; width:300px"></div>
                 </div>
             </div>
         </div>
+        <div id="spacer-lg" class="d-none d-lg-block"></div>
     </div>
-    <footer class="container-fluid position-relative d-flex justify-content-center align-items-center bg-white p-0 border-top" style="height: 80px; top: 60px;max-width: 1440px;  border-color: #413227" >
+    <footer id="footer" class="container-fluid position-relative d-flex justify-content-center align-items-center p-0 border-top" style="height: 80px; top: 60px;max-width: 1440px;  border-color: #413227" >
         <div class="container-fluid" style="width: 460px;">
             <div class="row px-4">
                 <div class="col-9 p-0 d-flex justify-content-center align-items-center"><p class="m-0"><i class="bi bi-c-circle"></i> 2026 McMari. Visas tiesības aizsargātas.</p></div>

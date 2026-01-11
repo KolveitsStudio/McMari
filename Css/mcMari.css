@@ -1,6 +1,5 @@
 /*base change*/
 body,.navbar a.nav-link, footer a, a{
-    color: #413227;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
@@ -8,7 +7,6 @@ body,.navbar a.nav-link, footer a, a{
 .navbar-collapse {
     z-index: 1070;
 }
-
 @media (max-width: 992px) {
     #navbarNav{
       top:60px;
@@ -23,6 +21,7 @@ body,.navbar a.nav-link, footer a, a{
     #bgsvg{
       display: none;
     }
+    
 }
 
 /*Main wrapper*/
@@ -31,6 +30,34 @@ body,.navbar a.nav-link, footer a, a{
     flex-direction: column;
     min-height: calc(100vh - 140px);
 }
+
+/*borders*/
+
+#footer{
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.navbar{
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+#bgPicContainer, #galleryContainer, #contactContainer, #productWrapper{
+  border-radius: 16px;
+}
+@media (max-width: 992px) {
+  #bgPicContainer{
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.navbar{
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#bigPicContainer, #galleryContainer, #contactContainer, #productWrapper{
+  border-radius: 0px;
+}
+}
+
 /*Background Image*/
 
 .parallax-wrapper {
@@ -51,12 +78,6 @@ body,.navbar a.nav-link, footer a, a{
   left:0;
   width:100vw;
   pointer-events: none;
-}
-
-@media (max-width: 576px) {
-  #textContainer, #picContainer {
-    background-color: #F0D3CE;
-  }
 }
 
 /*Product page*/
@@ -97,6 +118,7 @@ body,.navbar a.nav-link, footer a, a{
 }
 .caption {
     height: 40px;
+    border-top: 1px solid #632C21;
 }
 .gallery-item:hover img {
     transform: scale(1.05);
@@ -111,10 +133,33 @@ body,.navbar a.nav-link, footer a, a{
 }
 
 /*colors*/
-#textContainer, #picContainer, #productWrapper, #contactContainer, #galerijaContainer, #galleryContainer{
+
+.navbar, .picContainer-item, #footer, #galleryContainer, #contactContainer, #productWrapper{
   background-color: #e3dedd;
+}
+.gallery-item{
+  background-color: white;
 }
 #btnSubmit{
   background-color: #413227;
+}
+a,h1,h2,p, a.nav-link, label{
+  color:#413227;
+}
+
+@media (max-width: 992px) {
+  #picContainer, #productWrapper, #contactContainer, .gallery-item, #textContainer,  #galleryContainer, #productWrapper{
+  background-color: #e3dedd;
+}
+.navbar, .collapse, .gallery-item, #footer, .picContainer-item{
+  background-color: white;
+}
+.navbar{
+  background-color: white;
+  border-bottom: none;
+}
+}
+
+#btnSubmit{
   border: none;
 }
