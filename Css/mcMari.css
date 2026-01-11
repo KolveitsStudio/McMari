@@ -190,7 +190,7 @@ a,h1,h2,p, a.nav-link, label{
 
 @media (max-width: 992px) {
   #picContainer, #productWrapper, #contactContainer, .gallery-item, #textContainer,  #galleryContainer, #productWrapper{
-  background-color: #DDCEC9;
+  background-color: #FFC8B7;
 }
 .navbar, .collapse, .gallery-item, #footer, .picContainer-item{
   background-color: white;
